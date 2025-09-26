@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram Profile - Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-900 text-white">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <h1 class="text-xl font-bold">Instagram</h1>
+      <ul class="hidden md:flex gap-6">
+        <li><a href="#" class="hover:text-gray-300">Home</a></li>
+        <li><a href="#" class="hover:text-gray-300">Explore</a></li>
+      </ul>
+      <button class="md:hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Header Profil -->
+  <header class="max-w-4xl mx-auto px-4 py-6">
+    <div class="flex flex-col md:flex-row items-start md:items-center gap-4">
+      <!-- Foto profil -->
+      <img src="img/img1.jpg" alt="Profile" class="w-24 h-24 rounded-full border-2 border-gray-300">
+      <!-- Bio -->
+      <div class="flex-1">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+          <h2 class="text-2xl font-semibold">Taufik Pratama</h2>
+          <!-- Tombol responsif -->
+          <div class="flex gap-2 order-2 md:order-1">
+            <button class="px-3 py-1 text-sm md:text-base bg-blue-600 text-white rounded shadow hover:bg-blue-700">Follow</button>
+            <button class="px-3 py-1 text-sm md:text-base border rounded hover:bg-gray-100">Message</button>
+          </div>
+        </div>
+        <p class="mt-2 text-gray-700">🎧 : Sial - Mahalini</p>
+        <p class="text-sm text-gray-600 mt-1">
+          <span class="font-bold">12</span> Postingan • 
+          <span class="font-bold">250</span> Followers • 
+          <span class="font-bold">1</span> Following 
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Feed -->
+  <main class="max-w-6xl mx-auto px-4 py-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <!-- Foto -->
+      <div class="bg-white rounded shadow overflow-hidden"><img src="img/img13.jpg" class="w-full h-64 object-cover"></div>
+      <div class="bg-white rounded shadow overflow-hidden"><img src="img/img2.jpg" class="w-full h-64 object-cover"></div>
+      <div class="bg-white rounded shadow overflow-hidden"><img src="img/img3.jpg" class="w-full h-64 object-cover"></div>
+      <div class="bg-white rounded shadow overflow-hidden"><img src="img/img4.jpg" class="w-full h-64 object-cover"></div>
+      <div class="bg-white rounded shadow overflow-hidden"><img src="img/img5.jpg" class="w-full h-64 object-cover"></div>
+      <div class="bg-white rounded shadow overflow-hidden"><img src="img/img6.jpg" class="w-full h-64 object-cover"></div>
+      <div class="bg-white rounded shadow overflow-hidden"><img src="img/img7.jpg" class="w-full h-64 object-cover"></div>
+      <div class="bg-white rounded shadow overflow-hidden"><img src="img/img8.jpg" class="w-full h-64 object-cover"></div>
+      <div class="bg-white rounded shadow overflow-hidden"><img src="img/img9.jpg" class="w-full h-64 object-cover"></div>
+      <div class="bg-white rounded shadow overflow-hidden"><img src="img/img10.jpg" class="w-full h-64 object-cover"></div>
+      <div class="bg-white rounded shadow overflow-hidden"><img src="img/img11.jpg" class="w-full h-64 object-cover"></div>
+      <div class="bg-white rounded shadow overflow-hidden"><img src="img/img12.jpg" class="w-full h-64 object-cover"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-4 mt-6">
+    <p class="text-sm">&copy; 2025 Instagram</p>
+  </footer>
+
+</body>
+</html>
